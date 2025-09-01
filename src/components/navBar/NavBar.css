@@ -1,0 +1,83 @@
+/* Reseta o body pra não ter scroll ao abrir menu */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+  margin: 1rem auto;
+}
+
+/* Botão do menu */
+.menu-btn {
+  cursor: pointer;
+}
+
+#hidden {
+  display: none;
+}
+
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: calc(100%); /* escondido inicialmente */
+
+  width: 25rem;
+  height: 100%;
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: white;
+  
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Quando abrir */
+.sidebar.open {
+  left: calc(100% - 29rem);
+}
+
+/* Lista do menu */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  font-size: 1.5rem;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  border-bottom: 1.5px solid white;
+}
+
+span {
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+
+/* Botão de fechar */
+.close-btn {
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
