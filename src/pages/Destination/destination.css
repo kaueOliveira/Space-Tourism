@@ -1,0 +1,32 @@
+#destination ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#destination ul li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+#destination ul li:hover {
+  border-bottom: 2px solid gray;
+}
+
+#destination ul li.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+#destination > .fade-in {
+  transition: opacity 2s ease-in;
+  opacity: 1;
+}
+
+#destination > .fade-out {
+  transition: opacity 01s ease-in-out;
+  opacity: 0;
+}

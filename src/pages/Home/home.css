@@ -1,6 +1,6 @@
 .home {
     width: 85%;
-    margin: 4rem auto;
+    margin: 4rem auto 0rem;
     border: 1px solid red;
 }
 
@@ -23,7 +23,7 @@
 .home > button {
     width: 25rem;
     height: 25rem;
-    margin: 8rem auto;
+    margin: 5rem auto;
 
     font-family: serif;
     font-size: 3.5rem;
