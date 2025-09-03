@@ -37,13 +37,13 @@ function NavBar() {
               <Link to="/"><span>00</span>HOME</Link>
             </li>
             <li>
-              <Link to="destination"><span>01</span>DESTINATION</Link>
+              <Link to="/destination"><span>01</span>DESTINATION</Link>
             </li>
             <li>
-              <Link><span>02</span>CREW</Link>
+              <Link to="/crew"><span>02</span>CREW</Link>
             </li>
             <li>
-              <Link><span>03</span>TECNOLOGY</Link>
+              <Link to="/technology"><span>03</span>TECNOLOGY</Link>
             </li>
           </ul>
         </div>
