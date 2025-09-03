@@ -1,4 +1,3 @@
-/* Reseta o body pra não ter scroll ao abrir menu */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,10 +14,10 @@ header {
   align-items: center;
 
   width: 90%;
-  margin: 1rem auto;
+  margin: auto;
+  padding-top: 2rem;
 }
 
-/* Botão do menu */
 .menu-btn {
   cursor: pointer;
 }
@@ -27,11 +26,10 @@ header {
   display: none;
 }
 
-/* Sidebar container */
 .sidebar {
   position: fixed;
   top: 0;
-  left: calc(100%); /* escondido inicialmente */
+  left: calc(100%); 
 
   width: 25rem;
   height: 100%;
@@ -43,16 +41,15 @@ header {
 
   color: white;
   
-  transition: left 0.3s ease;
+  transition: left 0.5s ease;
   z-index: 1000;
 }
 
-/* Quando abrir */
+
 .sidebar.open {
   left: calc(100% - 29rem);
 }
 
-/* Lista do menu */
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -73,7 +70,11 @@ span {
   font-weight: bolder;
 }
 
-/* Botão de fechar */
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .close-btn {
   padding: 5px;
   cursor: pointer;
