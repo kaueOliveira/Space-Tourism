@@ -1,4 +1,4 @@
-import "./tecnology.css";
+import "./technology.css";
 import NavBar from "../../components/navBar/navBar";
 
 const Tecnology = () => {
