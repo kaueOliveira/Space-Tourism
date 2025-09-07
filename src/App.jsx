@@ -3,7 +3,7 @@ import Destination from "./pages/Destination/Destination";
 import Crew from "./pages/Crew/Crew";
 import Technology from "./pages/Technology/Technology"
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
 
