@@ -35,16 +35,15 @@ header {
   height: 100%;
   padding: 2rem;
 
-  background: rgba(255, 255, 255, 0.137);
+  background: rgba(255, 255, 255, 0.096);
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
 
   color: white;
   
   transition: left 0.5s ease;
   z-index: 1000;
 }
-
 
 .sidebar.open {
   left: calc(100% - 29rem);

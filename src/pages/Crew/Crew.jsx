@@ -55,3 +55,5 @@ const Crew = () => {
 };
 
 export default Crew;
+// deslizar no mobile
+// resetar setinterval

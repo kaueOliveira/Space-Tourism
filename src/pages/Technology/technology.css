@@ -1,7 +1,90 @@
 #tecnology {
+  min-height: 100vh;
   width: 100%;
-  height: 100vh;
-  background: url("../../assets/technology/background-technology-mobile.jpg")
-    no-repeat center fixed;
+  background: url("../../assets/technology/background-technology-mobile.jpg") no-repeat center scroll;
   background-size: cover;
+}
+
+#section-technology {
+  width: 100%;
+  color: #d2d8f9;
+}
+
+#section-technology > p {
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 3rem auto 1rem;
+}
+
+#section-technology > img {
+  width: 100%;
+}
+
+#tec-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 20rem;
+  margin: 3rem auto 0;
+}
+
+#tec-buttons > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  margin: 0;
+
+  border-radius: 50%;
+  border: 1px solid #d2d8f998;
+
+  font-size: 1.4rem;
+  font-weight: 100;
+  
+  cursor: pointer;
+  color: #d2d8f998;
+} 
+
+#tec-buttons > span.active {
+  background-color: white;
+  color: black;
+}
+
+#section-technology > h2 {
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-align: center;
+
+  margin-top: 4rem;
+}
+
+#section-technology > h1 {
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+#section-technology > #description {
+  width: 90%;
+  margin: auto;
+
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#section-technology .fade-in {
+  transition: opacity 2s ease-in;
+  opacity: 1;
+}
+
+#section-technology .fade-out {
+  transition: opacity 01s ease-in-out;
+  opacity: 0;
 }
