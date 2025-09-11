@@ -1,20 +1,34 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./crew.css";
 import data from "../../data.json";
 import NavBar from "../../components/navBar/navBar";
 
 const Crew = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const intervalRef = useRef(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const startInterval = () => {
+    intervalRef.current = setInterval(() => {
       setActiveIndex((prevIndex) =>
         prevIndex === data.crew.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
+  }
 
-    return () => clearInterval(interval);
+  const resetInterval = () => {
+    clearInterval(intervalRef.current);
+    startInterval();
+  }
+
+  useEffect(() => {
+    startInterval();
+    return () => clearInterval(intervalRef.current);
   }, []);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+    resetInterval();
+  }
 
   return (
     <div id="crew">
@@ -47,7 +61,7 @@ const Crew = () => {
             <button
               key={index}
               className={`dot ${activeIndex === index ? "active" : ""}`}
-              onClick={() => setActiveIndex(index)}
+              onClick={() => handleDotClick(index)}
             />
           ))}
         </div>
