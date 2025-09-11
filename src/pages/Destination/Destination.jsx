@@ -47,13 +47,15 @@ const Destination = () => {
           <p className={fade ? "fade-in" : "fade-out"}>
             {currentDestination.description}
           </p>
-          <div id="distance" className={fade ? "fade-in" : "fade-out"}>
-            <span>AVG. DISTANCE</span>
-            <p>{currentDestination.distance}</p>
-          </div>
-          <div id="time-travel" className={fade ? "fade-in" : "fade-out"}>
-            <span>EST. TRAVEL TIME</span>
-            <p>{currentDestination.travel}</p>
+          <div id="container-info">
+            <div id="distance" className={fade ? "fade-in" : "fade-out"}>
+              <span>AVG. DISTANCE</span>
+              <p>{currentDestination.distance}</p>
+            </div>
+            <div id="time-travel" className={fade ? "fade-in" : "fade-out"}>
+              <span>EST. TRAVEL TIME</span>
+              <p>{currentDestination.travel}</p>
+            </div>
           </div>
         </div>
       </section>

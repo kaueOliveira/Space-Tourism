@@ -32,9 +32,11 @@ const Crew = () => {
                 <div className="slide-image" key={index}>
                   <img src={item.images.png} alt={item.name} />
                 </div>
-                <h2>{item.role}</h2>
-                <h1>{item.name}</h1>
-                <p>{item.bio}</p>
+                <div>
+                  <h2>{item.role}</h2>
+                  <h1>{item.name}</h1>
+                  <p>{item.bio}</p>
+                </div>
               </div>
             ))}
           </div>

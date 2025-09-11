@@ -21,7 +21,7 @@ const Tecnology = () => {
     <div id="tecnology">
       <NavBar />
       <section id="section-technology">
-        <p>03 SPACE LUNCH 101</p>
+        <p><span>03</span> SPACE LUNCH 101</p>
         <img
           src={currentDestination.images.landscape}
           alt={currentDestination.name}

@@ -1,7 +1,8 @@
 #crew {
   min-height: 100vh;
   width: 100%;
-  background: url("../../assets/crew/background-crew-mobile.jpg") no-repeat center scroll;
+  background: url("../../assets/crew/background-crew-mobile.jpg") no-repeat
+    center scroll;
   background-size: cover;
 }
 
@@ -15,7 +16,7 @@
   letter-spacing: 2.5px;
 
   margin-bottom: 4rem;
-  color: #D2D8F9;
+  color: #d2d8f9;
 }
 
 #slides {
@@ -38,7 +39,7 @@
   height: 27rem;
 }
 
-.slide > h2 {
+.slide h2 {
   width: 90%;
   margin: 0 auto;
   padding-top: 4rem;
@@ -46,19 +47,19 @@
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 1px;
-  
-  color: #D2D8F9;
-  border-top: 1px solid #D2D8F9;
+
+  color: #d2d8f9;
+  border-top: 1px solid #d2d8f9;
 }
 
-.slide > h1 {
+.slide h1 {
   font-size: 2.7rem;
   font-weight: 100;
 
   color: white;
 }
 
-.slide > p {
+.slide p {
   width: 40rem;
   margin: 0 auto;
 
@@ -66,7 +67,7 @@
   line-height: 2rem;
   font-family: sans-serif;
 
-  color: #D2D8F9;
+  color: #d2d8f9;
 }
 
 #dots {
@@ -97,4 +98,41 @@
 
 .dot.active {
   background-color: white;
+}
+
+@media (min-width: 640px) /*and (max-width: 1024px) */ {
+  #section-crew > p {
+    font-size: 1.6rem;
+    margin: 3.5rem 0 2rem;
+  }
+
+  .slide {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .slide img {
+    height: 30.9rem;
+    margin-top: 5rem;
+  }
+
+  .slide h2 {
+    padding-top: 2.5rem;
+    border: none;
+  }
+
+  .slide h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin: 1.2rem;
+  }
+
+  .slide p {
+    width: 47.5rem;
+    font-size: 1.6rem;
+  }
+
+  #dots {
+    top: 34.5rem;
+  }
 }

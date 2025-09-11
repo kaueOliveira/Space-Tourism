@@ -1,7 +1,8 @@
 #tecnology {
   min-height: 100vh;
   width: 100%;
-  background: url("../../assets/technology/background-technology-mobile.jpg") no-repeat center scroll;
+  background: url("../../assets/technology/background-technology-mobile.jpg")
+    no-repeat center scroll;
   background-size: cover;
 }
 
@@ -45,10 +46,15 @@
 
   font-size: 1.4rem;
   font-weight: 100;
-  
+
   cursor: pointer;
+  transition: all 0.8s ease;
   color: #d2d8f998;
-} 
+}
+
+#tec-buttons > span:hover {
+  border: 1px solid white;
+}
 
 #tec-buttons > span.active {
   background-color: white;
@@ -68,6 +74,8 @@
   font-size: 3rem;
   font-weight: 100;
   text-align: center;
+
+  color: white;
 }
 
 #section-technology > #description {
@@ -87,4 +95,41 @@
 #section-technology .fade-out {
   transition: opacity 01s ease-in-out;
   opacity: 0;
+}
+
+@media (min-width: 640px) /*and (max-width: 1024px) */ {
+  #section-technology p:nth-of-type(1) {
+    color: white;
+    font-weight: 200;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+  }
+
+  #section-technology > p span {
+    color: #484a53;
+    letter-spacing: normal;
+    margin-right: 1rem;
+  }
+
+  #section-technology > h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 1.5rem 0;
+  }
+
+  #section-technology > #description {
+    width: 65%;
+    font-size: 1.5rem;
+  }
+
+  #tec-buttons {
+    width: 22.5rem;
+  }
+
+  #tec-buttons > span {
+    height: 5.5rem;
+    width: 5.5rem;
+
+    font-size: 1.5rem;
+  }
 }

@@ -29,7 +29,7 @@ header {
 .sidebar {
   position: fixed;
   top: 0;
-  left: calc(100%); 
+  left: calc(100%);
 
   width: 25rem;
   height: 100%;
@@ -40,7 +40,7 @@ header {
   -webkit-backdrop-filter: blur(15px);
 
   color: white;
-  
+
   transition: left 0.5s ease;
   z-index: 1000;
 }
@@ -57,10 +57,14 @@ header {
 .sidebar li {
   font-size: 1.5rem;
   padding: 15px 0;
-  cursor: pointer;
+
+  transition: border-bottom 0.8s;
+
+  border-bottom: 1.5px solid transparent;
 }
 
 .sidebar li:hover {
+  transition: 0.8s;
   border-bottom: 1.5px solid white;
 }
 
@@ -80,4 +84,41 @@ a {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+@media (min-width: 640px) {
+  header {
+    /* justify-content: space-evenly; */
+  }
+  .menu-btn,
+  .close-btn {
+    display: none;
+  }
+
+  .sidebar {
+    width: 40rem;
+    height: fit-content;
+    padding: 0;
+
+    position: absolute;
+    left: calc(100% - 400px) !important;
+
+    background: rgba(255, 255, 255, 0.048);
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+
+  .sidebar li {
+    font-size: 1.35rem;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+  }
+
+  .sidebar span {
+    display: none;
+  }
 }
