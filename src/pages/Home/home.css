@@ -54,10 +54,9 @@
 
 .home button:hover {
   outline: 6rem solid rgba(255, 255, 255, 0.199);
-  
 }
 
-@media (min-width: 640px) /*and (max-width: 1024px)*/ {
+@media (min-width: 640px) /*and (max-width: 1024px) */ {
   .home {
     background: url("../../assets/home/background-home-tablet.jpg") no-repeat
       center fixed;
@@ -85,5 +84,53 @@
   .home button:hover {
     outline-width: 3rem;
     scale: 1.2;
+  }
+
+  @media (min-width: 1024px) {
+    .home {
+      background-image: url("../../assets/home/background-home-desktop.jpg");
+      display: block;
+    }
+
+    #section-home {
+      width: 75%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #home-infos {
+      width: min-content;
+    }
+
+    .home h1 {
+      font-size: 15rem;
+      letter-spacing: 8px;
+      
+      margin-bottom: 3rem;
+    }
+
+    .home p {
+      font-size: 1.7rem;
+      letter-spacing: 2px;
+      
+    }
+
+    .home p:nth-of-type(2) {
+      font-size: 1.75rem;
+      text-align: left;
+      line-height: 2.75rem;
+      letter-spacing: normal;
+    }
+
+    .home button {
+      margin: 0;
+    }
   }
 }

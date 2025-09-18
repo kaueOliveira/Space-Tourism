@@ -121,4 +121,21 @@ a {
   .sidebar span {
     display: none;
   }
+
+  @media (min-width: 1024px) {
+    .sidebar {
+      width: 75rem;
+      left: calc(100% - 750px) !important;
+    }
+
+    .sidebar ul {
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    .sidebar li {
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+    }
+  }
 }
