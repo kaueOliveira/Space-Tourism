@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../data.json";
 import "./technology.css";
-import NavBar from "../../components/navBar/navBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 const Tecnology = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

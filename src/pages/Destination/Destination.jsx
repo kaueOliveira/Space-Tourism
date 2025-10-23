@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "../../data.json";
 import "./destination.css";
-import NavBar from "../../components/navBar/navBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 const Destination = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
