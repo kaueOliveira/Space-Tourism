@@ -5,7 +5,7 @@ import iconClose from "../../assets/shared/icon-close.svg";
 import logo from "../../assets/shared/logo.svg";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar_test() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,4 +54,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBar_test;

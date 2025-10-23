@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./crew.css";
 import data from "../../data.json";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar_test/NavBar_test";
 
 const Crew = () => {
   const [activeIndex, setActiveIndex] = useState(0);
